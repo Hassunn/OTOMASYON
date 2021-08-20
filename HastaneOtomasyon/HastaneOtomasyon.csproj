@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AD32ADFA-0C1B-4C64-B621-8E31D9BE8712}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HastaneOtomasyon</RootNamespace>
+    <AssemblyName>HastaneOtomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form3_randevu_sil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3_randevu_sil.Designer.cs">
+      <DependentUpon>Form3_randevu_sil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5_hasta_ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5_hasta_ekle.Designer.cs">
+      <DependentUpon>Form5_hasta_ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_doktorlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_doktorlar.Designer.cs">
+      <DependentUpon>form_doktorlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_giris_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_giris_menu.Designer.cs">
+      <DependentUpon>form_giris_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1_giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1_giris.Designer.cs">
+      <DependentUpon>Form1_giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2_randevu_al.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2_randevu_al.Designer.cs">
+      <DependentUpon>Form2_randevu_al.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_hastabull.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_hastabull.Designer.cs">
+      <DependentUpon>Form_hastabull.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_hastaduzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_hastaduzenle.Designer.cs">
+      <DependentUpon>Form_hastaduzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_hstalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_hstalar.Designer.cs">
+      <DependentUpon>form_hstalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="form_rndgecmisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_rndgecmisi.Designer.cs">
+      <DependentUpon>form_rndgecmisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="randevularım.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="randevularım.Designer.cs">
+      <DependentUpon>randevularım.cs</DependentUpon>
+    </Compile>
+    <Compile Include="recete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recete.Designer.cs">
+      <DependentUpon>recete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SİL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SİL.Designer.cs">
+      <DependentUpon>SİL.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form3_randevu_sil.resx">
+      <DependentUpon>Form3_randevu_sil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5_hasta_ekle.resx">
+      <DependentUpon>Form5_hasta_ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_doktorlar.resx">
+      <DependentUpon>form_doktorlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_giris_menu.resx">
+      <DependentUpon>form_giris_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1_giris.resx">
+      <DependentUpon>Form1_giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2_randevu_al.resx">
+      <DependentUpon>Form2_randevu_al.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_hastabull.resx">
+      <DependentUpon>Form_hastabull.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_hastaduzenle.resx">
+      <DependentUpon>Form_hastaduzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_hstalar.resx">
+      <DependentUpon>form_hstalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="form_rndgecmisi.resx">
+      <DependentUpon>form_rndgecmisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="randevularım.resx">
+      <DependentUpon>randevularım.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recete.resx">
+      <DependentUpon>recete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SİL.resx">
+      <DependentUpon>SİL.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
